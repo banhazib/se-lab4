@@ -35,4 +35,14 @@ class GT4500Test {
         // Assert
         assertEquals(true, result);
     }
+        @Test
+    void fireLaser_NotImplemented_ReturnsFalse() {
+        // Arrange (ship is created in init())
+
+        // Act
+        boolean result = ship.fireLaser(FiringMode.SINGLE);
+
+        // Assert
+        assertEquals(false, result);
+    }
 }
